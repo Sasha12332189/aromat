@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня "Аромат"</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke;
+            color: #333333;
+        }
+        header {
+            background: linear-gradient(to bottom, #4f3b1e, #856345);
+            color: #FFFFFF;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2em;
+            color: #6f4e37;
+            margin-bottom: 20px;
+        }
+        img {
+        background-color: #fceee3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 85px;
+            width: 250px;
+            padding: 20px;
+            position: relative;
+            text-align: left;
+        }
+        img {
+            border-radius: 75px;
+        }
+        .btn-order {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4f3b1e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header h2 {
+                font-size: 1.2em;
+            }
+
+            nav a {
+                font-size: 1em;
+                margin: 0 10px;
+            }
+
+            .menu-item {
+                width: 200px;
+                padding: 15px;
+            }
+
+            section h2 {
+                font-size: 1.5em;
+            }
+        }
+
+         @media (max-width: 480px) {
+            header {
+                height: 60vh;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header h2 {
+                font-size: 1em;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                padding: 5px;
+            }
+
+            nav a {
+                font-size: 0.9em;
+                margin: 5px;
+            }
+
+            .menu-item {
+                width: 180px;
+                padding: 10px;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            section h2 {
+                font-size: 1.2em;
+            }
+
+            footer {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Чизкейк</h1>
+        <h2>Вкусный десерт к вашему кофе.</h2>
+    </header>
+    <section>
+        <h2>О Чизкейке</h2>
+        <img src="image/chesecake.jpg">
+        <p>Чизкейк – это нежный десерт, состоящий из тонкого хрустящего основания (чаще всего из печенья) и кремовой сырной начинки. Этот популярный лакомство имеет многовековую историю и предлагается в разных вариациях: классический Нью-Йоркский чизкейк, с ягодными топпингами, шоколадный или даже без выпечки.
+        Его утончённый вкус и насыщенная текстура делают чизкейк идеальным дополнением к чашке кофе или чая.</p>
+    <form action="/order" method="POST">
+        <input type="hidden" name="cofee type" value="Чизкейк">
+        <button type="submit" class="btn-order">Заказать Чизкейк - 10$</button>
+    </form>
+    </section>
+</body>
+</html>
